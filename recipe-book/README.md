@@ -10,7 +10,7 @@
 Для начала необходимо клонировать проект с репозитория или скачать его архив.
 
 ```bash
-git clone https://github.com/LuciferDevV/individualSGBD/recipe-book.git
+git clone https://github.com/LuciferDevV/individualSGBD/tree/main/recipe-book
 ```
 
 ### 2. Создать базу данных `recipe_book`
