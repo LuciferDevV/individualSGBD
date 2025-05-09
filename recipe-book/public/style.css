@@ -1,0 +1,200 @@
+/* Основной стиль страницы */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #faf3e0;
+    margin: 0;
+    padding: 0;
+    color: #5a4e3e;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #f7c5b7;
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 1.3em;
+    border-bottom: 4px solid #f1a7a2;
+}
+
+/* Ссылки в шапке */
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+/* Стили для фута */
+footer {
+    background-color: #f7c5b7;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    border-top: 4px solid #f1a7a2;
+}
+
+/* Эффекты для ссылок */
+header a:hover,
+a:hover {
+    text-decoration: underline;
+    color: #d46b60;
+}
+
+/* Основное содержимое */
+main {
+    max-width: 90%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 2.5em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    flex: 1;
+}
+
+/* Заголовки */
+h1,
+h2 {
+    color: #8c5e4f;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+/* Форма */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Поля ввода */
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.75em;
+    font-size: 1em;
+    margin-top: 0.3em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff1e1;
+    color: #5a4e3e;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Кнопка отправки формы */
+form button {
+    padding: 0.75em;
+    font-size: 1.1em;
+    color: white;
+    background-color: #f7c5b7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+form button:hover {
+    background-color: #d46b60;
+}
+
+/* Список рецептов */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 1.2em;
+    border-bottom: 1px solid #f1a7a2;
+    background-color: #fff8f0;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+ul li strong {
+    font-size: 1.2em;
+}
+
+/* Ссылки */
+a {
+    color: #d46b60;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопки удаления */
+form[action="/delete"] button {
+    background-color: #f1a7a2;
+}
+
+form[action="/delete"] button:hover {
+    background-color: #d46b60;
+}
+
+/* Кнопка для рецепта */
+a.button {
+    display: block;
+    margin-top: 10px;
+    padding: 12px 24px;
+    background-color: #f7c5b7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: auto;
+}
+
+a.button:hover {
+    background-color: #d46b60;
+}
+
+a.button:active {
+    background-color: #a83c33;
+}
+
+/* Стиль кнопки1 */
+a.button1 {
+    padding: 12px 24px;
+    background-color: #f7c5b7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+a.button1:hover {
+    background-color: #d46b60;
+}
+
+a.button1:active {
+    background-color: #a83c33;
+}
+
+.button1+.button1 {
+    margin-left: 10px;
+}
